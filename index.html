@@ -8,6 +8,104 @@
     <link rel="stylesheet" href="index.js">
 </head>
 
+<!-- 
+  Bootstrap docs: https://getbootstrap.com/docs
+-->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+<header>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="sea-8309203_1280.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line"></div>
+                        <h2>COIL Project</h2>
+                        <h1>Belgium, Mexico & USA</h1>
+                        <h4>Intercultural collab</h4>
+                    </div>
+                </div>
+             </div>
+        </div>        
+        <div class="item">
+          <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
+          <div class="cover">
+              <div class="container">
+                  <div class="header-content">
+                      <div class="line"></div>
+                      <h2>Thomas More</h2>
+                      <h1>Belgium</h1>
+                      <h4>By the students of Digital Experience Design</h4>
+                  </div>
+              </div>
+           </div>
+      </div>                    
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2017/10/17/19/11/fantasy-2861815_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>TEC</h2>
+                        <h1>Mexico</h1>
+                        <h4>By the students of naam studierichting</h4>
+                    </div>
+                </div>
+             </div>
+        </div>                
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2017/07/17/23/51/wormhole-2514312_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Naam school</h2>
+                        <h1>USA</h1>
+                        <h4>By the students of naam studierichting</h4>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:3000, // Verlaag de timeout naar 3000 (3 seconden)
+        autoplayHoverPause:true,
+        items:1,
+        animateOut: 'fadeOut'
+    });
+});
+
+
+  
+</script>
+
 <div class="container-block container">
     <p class="text-blk team-head-text">
       Our Team
@@ -15,19 +113,22 @@
     <div class="responsive-container-block teamcard-container">
       <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
         <div class="team-card">
-          <div class="team-img-wrapper">
-            <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg">
-          </div>
-          <div class="team-card-content">
-            <p class="text-blk name">
-              Jaro Brichau
-            </p>
-            <p class="text-blk position">
-              Thomas More
-            </p>
-          </div>
+          <a href="aboutjaro.html">
+            <div class="team-img-wrapper">
+              <img class="team-img" src="Schermafbeelding 2024-03-11 220224.png">
+            </div>
+            <div class="team-card-content">
+              <p class="text-blk name">
+                Jaro Brichau
+              </p>
+              <p class="text-blk position">
+                Thomas More
+              </p>
+            </div>
+          </a>
         </div>
       </div>
+      
       <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
         <div class="team-card">
           <div class="team-img-wrapper">
@@ -195,3 +296,5 @@
       </div>
     </div>
   </div>
+
+ 
