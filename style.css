@@ -1,6 +1,19 @@
 * {
     font-family: Nunito, sans-serif;
   }
+
+  h1{
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
   
   .text-blk {
     margin-top: 0px;
@@ -51,7 +64,7 @@
   }
   
   .team-head-text {
-    font-size: 48px;
+    font-size: 3em;
     line-height: 50px;
     font-weight: 900;
     text-align: center;
@@ -62,7 +75,7 @@
   }
   
   .name {
-    font-size: 18px;
+    font-size: 1.125em;
     margin-top: 11px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -97,6 +110,10 @@
   }
   
   .team-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
     max-width: 100%;
   }
   
@@ -116,24 +133,42 @@
 
 
 
+.masthead-content{
+  margin-inline: auto;
+  width: 500px;
 
+}
 
 .content-footer,
 .masthead-heading,
 .masthead-intro {
-  text-align: center;
+  text-align: left;
 }
 
 .masthead {
+  position: relative;
   padding: 6em 0;
-  background-image: url('futureworld.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
+
+.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('img/futureworld.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 0.7; /* Set your desired opacity here */
+  z-index: -1;
+}
+
 
 .masthead-intro {
     /* Layout Declarations */
-    margin-bottom: 0.1em;
+    margin-bottom: 0.5em;
     /* Typography Declarations */
     font-size: 2em;
 }
@@ -153,6 +188,7 @@
 .location-section,
 .questions-section {
     max-width: 38em;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
@@ -178,23 +214,42 @@ section > h1 {
     margin-top: 2em;
 }
 
+
+.masthead-content{
+  margin-inline: auto;
+  width: fit-content;
+}
+
 .content-footer,
 .masthead-heading,
 .masthead-intro {
-  text-align: center;
+  text-align: left;
 }
 
 .masthead {
+  position: relative;
   padding: 6em 0;
-  background-image: url('futureworld.jpg');
+}
+
+.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('img/futureworld.jpg');
   background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
+  opacity: 0.7; /* Set your desired opacity here */
+  z-index: -1;
 }
 
 .masthead-intro {
-  margin-bottom: 0.1em;
-  font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
+  margin-bottom: 0.5em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2em;
 }
 
 .masthead-heading {
@@ -214,7 +269,6 @@ section > h1 {
 }
 h2 {
     /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -304,7 +358,7 @@ header .item .cover .header-content h2 {
   color: #fff;
 }
 header .item .cover .header-content h1 {
-  font-size: 56px;
+  font-size: 3.5em;
   font-weight: 600;
   margin: 5px 0 20px;
   word-spacing: 3px;
