@@ -1,768 +1,326 @@
-* {
-    font-family: Nunito, sans-serif;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Classroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+</head>
 
-  h1{
-    font-size: 2em;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  }
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-  }
+<header>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="sea-8309203_1280.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line"></div>
+                        <h2>COIL Project</h2>
+                        <h1>Belgium, Mexico & USA</h1>
+                        <h4>Intercultural collab</h4>
+                    </div>
+                </div>
+             </div>
+        </div>        
+        <div class="item">
+          <img src="https://cdn.pixabay.com/photo/2015/05/31/10/51/technology-791029_960_720.jpg" alt="">
+          <div class="cover">
+              <div class="container">
+                  <div class="header-content">
+                      <div class="line"></div>
+                      <h2>Thomas More</h2>
+                      <h1>Belgium</h1>
+                      <h4>By the students of Digital Experience Design</h4>
+                  </div>
+              </div>
+           </div>
+      </div>                    
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2017/10/17/19/11/fantasy-2861815_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>TEC</h2>
+                        <h1>Mexico</h1>
+                        <h4>By the students of Mexico</h4>
+                    </div>
+                </div>
+             </div>
+        </div>                
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2017/07/17/23/51/wormhole-2514312_960_720.jpg" alt="">
+            <div class="cover">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="line animated bounceInLeft"></div>
+                        <h2>Naam school</h2>
+                        <h1>USA</h1>
+                        <h4>By the students of USA!</h4>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+    </div>
+</header>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:3000, // Verlaag de timeout naar 3000 (3 seconden)
+        autoplayHoverPause:true,
+        items:1,
+        animateOut: 'fadeOut'
+    });
+});
+
+
   
-  .text-blk {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    line-height: 25px;
-  }
+</script>
+
+<div class="future-section">
+  <p class="text-blk team-head-text" style="padding-top: 24px;">
+    Our vision of the future cities in 2050
+  </p>
+  <div class="images-block">
+    <div style="display: flex; gap: 1.5%; margin-left: 64px; margin-right: 64px;">
+      <div style="width: 49.25%;"><img style="width: 100%; height: 100%; background-size: cover;" src="futureGreen1.jpg" alt="green city"></div>
+      <div style="width: 49.25%;"><img style="width: 100%; height: 100%; background-size: cover;" src="futureGreen2.jpg" alt="green city"></div>
+    </div>
+    <div style="margin-left: 64px; margin-right: 64px; margin-top: 12px;">
+      <div style="width: 100%;"><img style="width: 100%; height: 100%; background-size: cover;" src="jaroMoodboard.png" alt="green city"></div>
+    </div>
+  </div>
+</div>
+
+
+
   
-  .responsive-container-block {
-    min-height: 75px;
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    justify-content: flex-start;
-  }
-  
-  .container-block {
-    min-height: 75px;
-    height: fit-content;
-    width: 100%;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    display: block;
-  }
-  
-  .responsive-cell-block {
-    min-height: 75px;
-  }
-  
-  .container {
-    max-width: 1380px;
-    margin-top: 80px;
-    margin-right: auto;
-    margin-bottom: 80px;
-    margin-left: auto;
-    padding-top: 0px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-  }
-  
-  .team-head-text {
-    font-size: 3em;
-    line-height: 50px;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 70px;
-    margin-left: 0px;
-  }
-  
-  .name {
-    font-size: 1.125em;
-    margin-top: 11px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    font-weight: 700;
-  }
-  
-  .position {
-    margin-top: 5px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-  }
-  
-  .team-card-container {
-    width: 263px;
-    margin-top: 0px;
-    margin-right: 15px;
-    margin-bottom: 30px;
-    margin-left: 15px;
-  }
-  
-  .teamcard-container {
-    justify-content: space-evenly;
-  }
-  
-  .team-img-wrapper {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
-  
-  .team-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 5px;
-    object-fit: cover;
-    max-width: 100%;
-  }
-  
-  @media (max-width: 500px) {
-    .team-card-container {
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 30px;
-      margin-left: 0px;
-      width: 100%;
-    }
-  
-    .team-img {
-      width: 100%;
-    }
-  }
 
-
-
-.masthead-content{
-  margin-inline: auto;
-  width: 500px;
-
-}
-
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: left;
-}
-
-.masthead {
-  position: relative;
-  padding: 6em 0;
-}
-
-.masthead::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('img/futureworld.jpg');
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  opacity: 0.7; /* Set your desired opacity here */
-  z-index: -1;
-}
-
-
-.masthead-intro {
-    /* Layout Declarations */
-    margin-bottom: 0.5em;
-    /* Typography Declarations */
-    font-size: 2em;
-}
-
-.masthead-heading {
-    /* Layout Declarations */
-    color: #F1C863;
-    margin-top: -0.2em;
-    /* Typography Declarations */
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
-
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-
-.introduction-section > p,
-.location-section > p,
-.questions-section,
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
-
-.questions-section > h2 {
-    font-size: 1.2em;
-    font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
-}
-
-section > h1 {
-    margin-top: 2em;
-}
-
-
-.masthead-content{
-  margin-inline: auto;
-  width: fit-content;
-}
-
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: left;
-}
-
-.masthead {
-  position: relative;
-  padding: 6em 0;
-}
-
-.masthead::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('img/futureworld.jpg');
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  opacity: 0.7; /* Set your desired opacity here */
-  z-index: -1;
-}
-
-.masthead-intro {
-  margin-bottom: 0.5em;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2em;
-}
-
-.masthead-heading {
-  margin-top: -0.2em;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 6em;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-}
-.introduction > p,
-.location > p,
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
-h2 {
-    /* Typography Declarations */
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-.content-footer {
-  margin: 50px 0;
-  padding: 20px 0;
-  text-align: center;
-  background-color: #73A8C2;
-  text-decoration: none;
-}
-.social > li {
-  display: inline-block;
-  margin: 0 5px;
-}
-.content-footer > p {
-  color: #F7EDE1;
-}
-a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #F1C863;
-}
-  
-@media only screen and (max-width: 500px) {
-    .masthead {
-        padding: 3em 0;
-    }
-    .masthead-heading {
-        font-size: 3em;
-    }
-    .content-footer {
-        padding: 2em 2.5em;
-  }
-}
-
-
-
-header .item {
-  height: 100vh;
-  position: relative;
-}
-header .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-header .item .cover {
-  padding: 75px 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-}
-header .item .cover .header-content {
-  position: relative;
-  padding: 56px;
-  overflow: hidden;
-}
-header .item .cover .header-content .line {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  border: 9px solid #fff;
-  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-}
-header .item .cover .header-content h2 {
-  font-weight: 300;
-  font-size: 35px;
-  color: #fff;
-}
-header .item .cover .header-content h1 {
-  font-size: 3.5em;
-  font-weight: 600;
-  margin: 5px 0 20px;
-  word-spacing: 3px;
-  color: #fff;
-}
-header .item .cover .header-content h4 {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 36px;
-  color: #fff;
-}
-header .owl-item.active h1 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-name: fadeInDown;
-  animation-delay: 0.3s;
-}
-header .owl-item.active h2 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-name: fadeInDown;
-  animation-delay: 0.3s;
-}
-header .owl-item.active h4 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-name: fadeInUp;
-  animation-delay: 0.3s;
-}
-header .owl-item.active .line {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-name: fadeInLeft;
-  animation-delay: 0.3s;
-}
-header .owl-nav .owl-prev {
-  position: absolute;
-  left: 15px;
-  top: 43%;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  background: rgba(0, 0, 0, 0.5) !important;
-  width: 40px;
-  cursor: pointer;
-  height: 40px;
-  position: absolute;
-  display: block;
-  z-index: 1000;
-  border-radius: 0;
-}
-header .owl-nav .owl-prev span {
-  font-size: 1.6875rem;
-  color: #fff;
-}
-header .owl-nav .owl-prev:focus {
-  outline: 0;
-}
-header .owl-nav .owl-prev:hover {
-  background: #000 !important;
-}
-header .owl-nav .owl-next {
-  position: absolute;
-  right: 15px;
-  top: 43%;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  background: rgba(0, 0, 0, 0.5) !important;
-  width: 40px;
-  cursor: pointer;
-  height: 40px;
-  position: absolute;
-  display: block;
-  z-index: 1000;
-  border-radius: 0;
-}
-header .owl-nav .owl-next span {
-  font-size: 1.6875rem;
-  color: #fff;
-}
-header .owl-nav .owl-next:focus {
-  outline: 0;
-}
-header .owl-nav .owl-next:hover {
-  background: #000 !important;
-}
-header:hover .owl-prev {
-  left: 0px;
-  opacity: 1;
-}
-header:hover .owl-next {
-  right: 0px;
-  opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-.new_footer_area {
-  background: #fbfbfd;
-}
-
-
-.new_footer_top {
-  padding: 120px 0px 270px;
-  position: relative;
-    overflow-x: hidden;
-}
-.new_footer_area .footer_bottom {
-  padding-top: 5px;
-  padding-bottom: 50px;
-}
-.footer_bottom {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #7f88a6;
-  padding: 27px 0px;
-}
-.new_footer_top .company_widget p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
-  color: #6a7695;
-  margin-bottom: 20px;
-}
-.new_footer_top .company_widget .f_subscribe_two .btn_get {
-  border-width: 1px;
-  margin-top: 20px;
-}
-.btn_get_two:hover {
-  background: transparent;
-  color: #5e2ced;
-}
-.btn_get:hover {
-  color: #fff;
-  background: #6754e2;
-  border-color: #6754e2;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
-  text-decoration: none;
-  outline: none;
-}
-
-
-
-.new_footer_top .f_widget.about-widget .f_list li a:hover {
-  color: #5e2ced;
-}
-.new_footer_top .f_widget.about-widget .f_list li {
-  margin-bottom: 11px;
-}
-.f_widget.about-widget .f_list li:last-child {
-  margin-bottom: 0px;
-}
-.f_widget.about-widget .f_list li {
-  margin-bottom: 15px;
-}
-.f_widget.about-widget .f_list {
-  margin-bottom: 0px;
-}
-.new_footer_top .f_social_icon a {
-  width: 44px;
-  height: 44px;
-  line-height: 43px;
-  background: transparent;
-  border: 1px solid #e2e2eb;
-  font-size: 24px;
-}
-.f_social_icon a {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  font-size: 14px;
-  line-height: 45px;
-  color: #858da8;
-  display: inline-block;
-  background: #ebeef5;
-  text-align: center;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.ti-facebook:before {
-  content: "\e741";
-}
-.ti-twitter-alt:before {
-  content: "\e74b";
-}
-.ti-vimeo-alt:before {
-  content: "\e74a";
-}
-.ti-pinterest:before {
-  content: "\e731";
-}
-
-.btn_get_two {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #5e2ced;
-  border-color: #5e2ced;
-  color: #fff;
-}
-
-.btn_get_two:hover {
-  background: transparent;
-  color: #5e2ced;
-}
-
-.new_footer_top .f_social_icon a:hover {
-  background: #5e2ced;
-  border-color: #5e2ced;
-color:white;
-}
-.new_footer_top .f_social_icon a + a {
-  margin-left: 4px;
-}
-.new_footer_top .f-title {
-  margin-bottom: 30px;
-  color: #263b5e;
-}
-.f_600 {
-  font-weight: 600;
-}
-.f_size_18 {
-  font-size: 18px;
-}
-h1, h2, h3, h4, h5, h6 {
-  color: #4b505e;
-}
-.new_footer_top .f_widget.about-widget .f_list li a {
-  color: #6a7695;
-}
-
-
-.new_footer_top .footer_bg {
-  position: absolute;
-  bottom: 0;
-  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
-  width: 100%;
-  height: 266px;
-}
-
-.new_footer_top .footer_bg .footer_bg_one {
-  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat center center;
-  width: 330px;
-  height: 105px;
-background-size:100%;
-  position: absolute;
-  bottom: 0;
-  left: 30%;
-  -webkit-animation: myfirst 22s linear infinite;
-  animation: myfirst 22s linear infinite;
-}
-
-.new_footer_top .footer_bg .footer_bg_two {
-  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
-  width: 88px;
-  height: 100px;
-background-size:100%;
-  bottom: 0;
-  left: 38%;
-  position: absolute;
-  -webkit-animation: myfirst 30s linear infinite;
-  animation: myfirst 30s linear infinite;
-}
-
-
-
-@-moz-keyframes myfirst {
-0% {
-  left: -25%;
-}
-100% {
-  left: 100%;
-}
-}
-
-@-webkit-keyframes myfirst {
-0% {
-  left: -25%;
-}
-100% {
-  left: 100%;
-}
-}
-
-@keyframes myfirst {
-0% {
-  left: -25%;
-}
-100% {
-  left: 100%;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.blockquote {
-  padding: 60px 80px 40px;
-  position: relative;
-}
-.blockquote p {
-  font-family: "Utopia-italic";
-  font-size: 35px;
-  font-weight: 700px;
-  text-align: center;
-}
-
-/*blockquote p::before {
-  content: "\f095"; 
-  font-family: FontAwesome;
- display: inline-block;
- padding-right: 6px;
- vertical-align: middle;
-font-size: 180px;
-}*/
-
-.blockquote:before {
-position: absolute;
-font-family: 'FontAwesome';
-top: 0;
-
-content:"\f10d";
-font-size: 200px;
-color: rgba(0,0,0,0.1);
+<blockquote class="otro-blockquote">
+  If we combine all our ideas during the conversations, our joint mood board is the one above. We opt for a green and futuristic city. The greenery is important because nature is more important today than ever, something we must not destroy. We love futurism with some sports facilities and tall buildings, as well as flying objects. Additionally, in the bottom left of the mood board, there is an upgraded train because trains in all countries look so ugly now, and we strongly believe in the future of public transportation. All these images are generated using AI.  <span>COIL Project</span>
+</blockquote>
+
+
+    
+<div class="container-block container">
+    <p class="text-blk team-head-text">
+      Our Team
+    </p>
+    <div class="responsive-container-block teamcard-container">
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+          <a href="aboutjaro.html">
+            <div class="team-img-wrapper">
+              <img class="team-img" src="Schermafbeelding 2024-03-11 220224.png">
+            </div>
+            <div class="team-card-content">
+              <p class="text-blk name">
+                Jaro Brichau
+              </p>
+              <p class="text-blk position">
+                Thomas More
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+          <a href="aboutTibo.html">
+            <div class="team-img-wrapper">
+              <img class="team-img" src="tibo.jpg">
+            </div>
+            <div class="team-card-content">
+              <p class="text-blk name">
+                Tibo Mertens
+              </p>
+              <p class="text-blk position">
+                Thomas More
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+            <a href="aboutevelien.html">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="evelien.png">
+          </div>
+          <div class="team-card-content">
+            <p class="text-blk name">
+              Evelien Vanophalvens
+            </p>
+            <p class="text-blk position">
+              Thomas More
+            </p>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg">
+          </div>
+          <div class="team-card-content">
+            <p class="text-blk name">
+              Tjerk Symens
+            </p>
+            <p class="text-blk position">
+              Thomas More
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg">
+          </div>
+          <div class="team-card-content">
+            <p class="text-blk name">
+              Wouter Waumans
+            </p>
+            <p class="text-blk position">
+              Thomas More
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg">
+          </div>
+          <div class="team-card-content">
+            <p class="text-blk name">
+              Sara
+            </p>
+            <p class="text-blk position">
+              Tex
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg">
+          </div>
+          <div class="team-card-content">
+            <p class="text-blk name">
+              Ximtz
+            </p>
+            <p class="text-blk position">
+              Tex
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg">
+          </div>
+          <div class="team-card-content">
+            <p class="text-blk name">
+              Emma Welch
+            </p>
+            <p class="text-blk position">
+              USA
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img class="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg">
+          </div>
+          <div class="team-card-content">
+            <p class="text-blk name">
+              Marisa Denovellis
+            </p>
+            <p class="text-blk position">
+              USA
+            </p>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
  
-}
-
-.blockquote::after {
-  content: "";
-  top: 20px;
-  left: 50%;
-  margin-left: -100px;
-  position: absolute;
-  border-bottom: 3px solid #bf0024;
-  height: 3px;
-  width: 200px;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
-.otro-blockquote{
-font-size: 1.4em;
-width:60%;
-margin:50px auto;
-font-family:Open Sans;
-font-style:italic;
-color: #555555;
-padding:1.2em 30px 1.2em 75px;
-border-left:8px solid #78C0A8 ;
-line-height:1.6;
-position: relative;
-background:#EDEDED;
-}
-
-.otro-blockquote::before{
-font-family:Arial;
-content: "\201C";
-color:#78C0A8;
-font-size:4em;
-position: absolute;
-left: 10px;
-top:-10px;
-}
-
-.otro-blockquote::after{
-content: '';
-}
-
-.otro-blockquote span{
-display:block;
-color:#333333;
-font-style: normal;
-font-weight: bold;
-margin-top:1em;
-}
+  <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18"></h3>
+                        <p></p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <button class="btn btn_get btn_get_two" type="submit">See our vision</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Thomas More</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Jaro</a></li>
+                            <li><a href="#">Tibo</a></li>
+                            <li><a href="#">Tjerk</a></li>
+                            <li><a href="#">Wouter</a></li>
+                            <li><a href="#">Evelien</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">US</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Ximtz</a></li>
+                            <li><a href="#">Sara</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Mexico</h3>
+                      <ul class="list-unstyled f_list">
+                          <li><a href="#">Emma</a></li>
+                          <li><a href="#">Marisa</a></li>
+                      </ul>
+                  </div>
+              </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+    
+</footer>
