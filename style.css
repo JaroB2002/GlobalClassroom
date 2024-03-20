@@ -742,6 +742,9 @@ margin-top:1em;
 
 
 
+.team-img {
+  border-radius: 10px; /* Verander dit getal om de mate van afgerondheid aan te passen */
+}
 
 
 
